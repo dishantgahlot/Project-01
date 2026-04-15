@@ -1,19 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import React from 'react'
+import Navbar from './components/Navbar'
+import TopBar from './components/secondary'
+import HeroSection from './components/slider'
+import BackgroundSlider from './components/slider'
+import ProductGrid from './components/background'
+import HorizontalSection from './components/horizontalSlider'
+import ProductGrid2 from './components/withiuz'
+import Footer from './components/footer'
 
+const App = () => {
   return (
-    <>
-     <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
 
+    <>
+
+    <Navbar/>
+    <TopBar/>
+
+     
+    <div className="space-y-20 bg-gray-100">
+
+      
+      <HeroSection/>
+      <ProductGrid2/>
+
+      <HorizontalSection/>
+     <ProductGrid2/>
+      <HorizontalSection/>
+      
+
+      <HorizontalSection/>
+
+      <Footer/>
+
+    </div>
+    
     </>
+    
   )
 }
 
