@@ -11,33 +11,46 @@ import Footer from './components/footer'
 
 const App = () => {
   return (
-
     <>
-
-    <Navbar/>
-    <TopBar/>
-
-     
-    <div className="space-y-20 bg-gray-100">
-
-      
+      <Navbar/>
+      <TopBar/>
       <HeroSection/>
-      <ProductGrid2/>
 
-      <HorizontalSection/>
-     <ProductGrid2/>
-      <HorizontalSection/>
-      
 
-      <HorizontalSection/>
+      <div className="bg-gray-100 py-6 space-y-8">
 
-      <Footer/>
+        
+        <div className="bg-white m-5 p-4 rounded shadow-sm">
+          <ProductGrid2/>
+        </div>
 
-    </div>
-    
+        <div className="bg-white m-5 p-4 rounded shadow-sm">
+          <HorizontalSection/>
+        </div>
+
+        <div className="px-5">
+          <ProductGrid2/>
+        </div>
+
+        <div className="px-5">
+          <HorizontalSection/>
+        </div>
+
+        <div className="px-5">
+          <ProductGrid2/>
+        </div>
+
+        <div className="px-5">
+          <HorizontalSection/>
+        </div>
+
+        <Footer/>
+
+      </div>
     </>
-    
   )
 }
+  
+
 
 export default App
